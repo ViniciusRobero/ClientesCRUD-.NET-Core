@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  ClienteCRUD.api:
+    image: ${DOCKER_REGISTRY-}donetcoreapijwt
+    build:
+      context: .
+      dockerfile: ClienteCRUD.API/Dockerfile
